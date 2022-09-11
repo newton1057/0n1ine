@@ -1,0 +1,20 @@
+.Tarjeta_Productos{
+    width: 20%;
+    background-color: #E7F6F2;
+    border-radius: 20px;
+    color: #395b64;
+}
+
+img{
+    width: 266px;
+    height: 291px;
+    padding: 2%;
+}
+
+.Tarjetas_Productos_Informacion{
+    padding: 10%;
+}
+
+.Tarjetas_Productos_Informacion h6{
+    color: #A5C9CA;
+}

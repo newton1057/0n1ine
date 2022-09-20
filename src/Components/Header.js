@@ -39,12 +39,14 @@ function Header(props) {
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></input>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <button class="btn btn-outline-header" type="submit">Buscar</button>
       </form>
-
-      <button class="btn btn-outline-success" type="submit">Login</button>
-      <button class="btn btn-outline-success" type="submit">Sign Up</button>
-      <button class="btn btn-outline-success" type="submit">Carrito <i class="fa fa-cart-arrow-down" aria-hidden="true"> </i> </button>
+      <div id="Botones">
+        <button class="btn btn-outline-header" type="submit">Login</button>
+        <button class="btn btn-outline-header" type="submit">Sign Up</button>
+        <button class="btn btn-outline-header" type="submit">Carrito <i class="fa fa-cart-arrow-down" aria-hidden="true"> </i> </button>
+      </div>
+      
       
     </div>
   </div>

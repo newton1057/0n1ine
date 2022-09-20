@@ -1,0 +1,12 @@
+.Registrar_Direccion{
+    background-color: #395b64;
+    color: #E7F6F2;
+    width: 50%;
+    padding: 5%;
+    border-radius: 10px ;
+}
+
+#FormRegistrar_Direccion{
+    width: 60%;
+    margin: auto;
+}

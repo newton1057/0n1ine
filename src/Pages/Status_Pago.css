@@ -1,0 +1,16 @@
+.Status_Pago{
+    background-color: #395b64;
+    color: #E7F6F2;
+    width: 50%;
+    padding: 5%;
+    border-radius: 10px ;
+}
+
+.Box{
+    padding: 4%;
+    margin-top: 2em;
+    color: #395b64;
+    background-color: #E7F6F2;
+    text-align: left;
+    border-radius: 2px;
+}

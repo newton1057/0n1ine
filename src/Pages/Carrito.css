@@ -1,0 +1,11 @@
+.Carrito{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#TotalCompra{
+    margin: 50px;
+    text-align: right;
+}

@@ -8,7 +8,7 @@ import Registrar_Forma_Pago from './Pages/Registrar_Forma_Pago';
 import Status_Pago from './Pages/Status_Pago';
 import Tarjetas_Disponibles from './Pages/Tarjetas_Disponibles';
 import Footer from './Components/Footer';
-
+import Carrito from './Pages/Carrito';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
@@ -22,6 +22,10 @@ function App() {
         </Routes>
         <Routes>
           <Route path='/Registrar' element={<Registrar/>}/>
+        </Routes>
+
+        <Routes>
+          <Route path='/Carrito' element={<Carrito/>}/>
         </Routes>
       </BrowserRouter>
       

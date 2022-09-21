@@ -44,9 +44,9 @@ function Header(props) {
         <button class="btn btn-outline-header" type="submit">Buscar <i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
       <div id="Botones">
-        <a href="/Login"><button class="btn btn-outline-header" type="submit" >Login <i class="fa-solid fa-user-plus"></i></button></a>
-        <a href="/Registrar"><button class="btn btn-outline-header" type="submit">Sign Up <i class="fa-solid fa-user"></i></button></a>
-        <button class="btn btn-outline-header" type="submit">Carrito <i class="fa fa-cart-arrow-down" aria-hidden="true"> </i> </button>
+        <a href="/Registrar"><button class="btn btn-outline-header" type="submit" >Login <i class="fa-solid fa-user-plus"></i></button></a>
+        <a href="/Login"><button class="btn btn-outline-header" type="submit">Sign Up <i class="fa-solid fa-user"></i></button></a>
+        <a href="/Carrito"><button class="btn btn-outline-header" type="submit">Carrito <i class="fa fa-cart-arrow-down" aria-hidden="true"> </i> </button></a>
       </div>
       
       

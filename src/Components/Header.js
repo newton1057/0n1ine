@@ -3,9 +3,11 @@ import './Header.css'
 
 function Header(props) {
   return (
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">AmaMer</a>
+    <a class="navbar-brand" href="#">
+      <img id="LogoNavBar" src={require('../Images/LogoO.png')} />
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -39,11 +41,11 @@ function Header(props) {
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></input>
-        <button class="btn btn-outline-header" type="submit">Buscar</button>
+        <button class="btn btn-outline-header" type="submit">Buscar <i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
       <div id="Botones">
-        <button class="btn btn-outline-header" type="submit">Login</button>
-        <button class="btn btn-outline-header" type="submit">Sign Up</button>
+        <a href="/Login"><button class="btn btn-outline-header" type="submit" >Login <i class="fa-solid fa-user-plus"></i></button></a>
+        <a href="/Registrar"><button class="btn btn-outline-header" type="submit">Sign Up <i class="fa-solid fa-user"></i></button></a>
         <button class="btn btn-outline-header" type="submit">Carrito <i class="fa fa-cart-arrow-down" aria-hidden="true"> </i> </button>
       </div>
       

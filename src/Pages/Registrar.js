@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useMemo, useState } from "react";
+import Select from 'react-select'
+import countryList from "react-select-country-list";
 import './Registrar.css';
 
 
 function Registrar() {
+    const [value,setValue] = useState("");
+    const options = useMemo(() => countryList().getData(), []);
+
+    function changeHandler(e) {
+        setValue(e);
+    };
+
   return (
+
+    
+
     <div className="Registrar">
         <h1>Registrar</h1>
         <br></br>
@@ -29,7 +41,7 @@ function Registrar() {
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email: </label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Email"></input>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"></input>
                 
             </div>
 
@@ -38,12 +50,13 @@ function Registrar() {
             <div id="Campos1">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Telefono: </label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Telefono"></input>
+                <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Telefono"></input>
                 
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Pais: </label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pais"></input>
+                <Select options={options} value={value} onChange={changeHandler}/>
+                
                 
             </div>
 
@@ -65,7 +78,7 @@ function Registrar() {
 
             
             <br></br>
-            <button type="button" class="btn btn-dark">Registrar</button>
+            <button type="button" class="btn btn-dark">Registrar  <i class="fa-solid fa-user"></i></button>
         </form>
     </div>
   );

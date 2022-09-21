@@ -15,8 +15,28 @@
     --bs-gradient: none;
 }
 
+.navbar-expand-lg{
+    height: 90px;
+    background-color: #E7F6F2;
+    
+}
+
+.nav-link a{
+    color: #395b64;
+}
+
+#LogoNavBar {
+    width: 200px;
+    padding: 2%;
+}
+
+
 .d-flex {
     margin-right: 2em;
+    
+}
+.d-flex button{
+    width: 150px;
 }
 
 #Botones button{
@@ -26,6 +46,10 @@
 @media only screen and (max-width: 600px) {
     .d-flex {
         margin: auto;
+    }
+    #LogoNavBar {
+        width: 100px;
+        padding: 2%;
     }
 
     #Botones {
@@ -37,4 +61,34 @@
         margin-left: 0.5em;
     }
     
+    .navbar-collapse{
+        background: #E7F6F2;
+        width: 100%;
+        
+        
+    }
+
+    .container-fluid{
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-brand{
+        margin-left: 10px;
+    }
+    .navbar-toggler{
+        margin-right: 10px;
+    }
+    .navbar-nav{
+        text-align: left;
+    }
+    .nav-link{
+        margin-left: 15px;
+    }
+    .d-flex{
+        width: 90%;
+    }
+
+    #Botones{
+        padding-bottom: 20px;
+    }
   }

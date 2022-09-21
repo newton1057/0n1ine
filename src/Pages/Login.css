@@ -1,9 +1,16 @@
 .Login{
     background-color: #395b64;
     color: #E7F6F2;
-    width: 50%;
+    width: 90%;
     padding: 5%;
+    margin: auto;
     border-radius: 10px ;
+    margin-bottom: 50px;
+}
+
+.Login form{
+    margin: auto;
+    width: 30%;
 }
 
 
@@ -12,6 +19,25 @@ a{
     color: #E7F6F2;
 }
 
+#X{
+    display: flex;
+    font-size: 20px;
+}
+
+#X input{
+    width: 100%;
+}
+
+#X i{
+    padding-left: 10px;
+    margin: auto;
+    color: #E7F6F2;
+}
+
+#X button{
+    background-color: #395b64;
+    border: 0;
+}
 
 @media only screen and (max-width: 600px) {
     .Login{
@@ -21,5 +47,10 @@ a{
         padding: 5%;
         border-radius: 10px ;
         margin: auto;
+        margin-bottom: 50px;
+    }
+    .Login form{
+        margin: auto;
+        width: 90%;
     }
   }

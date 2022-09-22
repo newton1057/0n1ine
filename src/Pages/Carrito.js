@@ -17,6 +17,9 @@ function Carrito() {
         <div id="TotalCompra">
             <h2>Total: </h2>
         </div>
+        <div id="Bot">
+          <button class="btn btn-outline-header" type="submit"> Confirmar pedido </button>
+        </div>
     </div>
   );
 }

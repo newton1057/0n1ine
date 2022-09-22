@@ -10,7 +10,7 @@ import Tarjetas_Disponibles from './Pages/Tarjetas_Disponibles';
 import Footer from './Components/Footer';
 import Carrito from './Pages/Carrito';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-
+import MiCuenta from './Pages/MiCuenta'
 function App() {
   return (
     <div className="App">
@@ -26,6 +26,9 @@ function App() {
 
         <Routes>
           <Route path='/Carrito' element={<Carrito/>}/>
+        </Routes>
+        <Routes>
+          <Route path='/MiCuenta' element={<MiCuenta/>}/>
         </Routes>
       </BrowserRouter>
       

@@ -61,6 +61,21 @@
         flex-direction: column;
     }
 
+    #Secciones h4{
+        font-size: 30px;
+    }
+    #Secciones h3{
+        font-size: 20px;
+    }
+
+    #Secciones a{
+        font-size: 15px;
+    }
+
+    #Secciones p{
+        font-size: 15px;
+    }
+
     #Seccion{
         height: 150px;
         margin: 2px;

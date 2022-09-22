@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import './Header.css'
 
 function Header(props) {
+  const [showAcceso, setAcceso] = useState(true)
+
   return (
     <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/index">
       <img id="LogoNavBar" src={require('../Images/LogoO.png')} />
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,8 +46,8 @@ function Header(props) {
         <button class="btn btn-outline-header" type="submit">Buscar <i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
       <div id="Botones">
-        <a href="/Registrar"><button class="btn btn-outline-header" type="submit" >Login <i class="fa-solid fa-user-plus"></i></button></a>
-        <a href="/Login"><button class="btn btn-outline-header" type="submit">Sign Up <i class="fa-solid fa-user"></i></button></a>
+        <a href= {showAcceso ? "/MiCuenta": "/Registrar"}><button class="btn btn-outline-header" type="submit" > {showAcceso ? <h7> Cuenta </h7>: <h7> Login </h7>} {showAcceso ? <i class="fa-solid fa-user"></i> : <i class="fa-solid fa-user-plus"></i>}</button></a>
+        <a href= {showAcceso ? "/MiCuenta": "/Login"}><button class="btn btn-outline-header" type="submit" > {showAcceso ? <h7> Cerrar Sesión </h7>: <h7> Sign Up </h7>} {showAcceso ? <i class="fa-solid fa-circle-xmark"></i> :<i class="fa-solid fa-user"></i>}</button></a>
         <a href="/Carrito"><button class="btn btn-outline-header" type="submit">Carrito <i class="fa fa-cart-arrow-down" aria-hidden="true"> </i> </button></a>
       </div>
       

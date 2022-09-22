@@ -3,9 +3,43 @@
     width: 80%;
     margin: auto;
     margin-bottom: 50px;
+    color: #395b64;
+
 }
 
 #TotalCompra{
     margin: 50px;
     text-align: right;
 }
+#Bot{
+    width: 40%;
+    margin: auto;
+}
+
+#Bot button{
+    width: 100%;
+    margin: auto;
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .Carrito h2{
+        margin-left: 20px;
+        font-size: 30px;
+    }
+    .Carrito{
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    #Seccion_Productos_Compra{
+       
+    }
+
+    #Bot{
+        width: 40%;
+        margin: auto;
+    }
+  }
+

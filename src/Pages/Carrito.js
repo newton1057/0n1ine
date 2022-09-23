@@ -1,9 +1,14 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState , useEffect} from "react";
 import './Carrito.css';
 
 import Tarjeta_Producto_Vertical from "../Components/Tarjeta_Producto_Vertical";
 
 function Carrito() {
+    const [total, setTotal] = useState();
+
+    useEffect(() => {
+        setTotal(localStorage.getItem("Costo"))
+    },[total])
     
   return (
     <div className="Carrito">
@@ -15,7 +20,7 @@ function Carrito() {
         </div>
 
         <div id="TotalCompra">
-            <h2>Total: </h2>
+            <h2>Total: {localStorage.getItem("Costo")}</h2>
         </div>
         <div id="Bot">
           <button class="btn btn-outline-header" type="submit"> Confirmar pedido </button>

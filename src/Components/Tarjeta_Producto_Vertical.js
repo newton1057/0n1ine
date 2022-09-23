@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Carrito from '../Pages/Carrito';
 import './Tarjeta_Producto_Vertical.css';
 
 
@@ -16,6 +16,8 @@ function Tarjeta_Producto_Vertical(props) {
         }
         setTotal(() => "$"+new Intl.NumberFormat('es-MX').format(props.Costo * numCantidad));
         console.log(new Intl.NumberFormat('es-MX').format(props.Costo * numCantidad));
+        localStorage.setItem('Costo', props.Costo * numCantidad)
+        
     }, [numCantidad])
 
     

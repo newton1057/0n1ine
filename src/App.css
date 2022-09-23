@@ -27,6 +27,12 @@
   color: white;
 }
 
+#ListaProductos {
+  display: flex;
+  flex-direction: row;
+  margin-right: 40px;
+  margin-left: 40px;
+}
 .App-link {
   color: #61dafb;
 }

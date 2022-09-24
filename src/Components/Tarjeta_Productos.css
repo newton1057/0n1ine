@@ -6,10 +6,15 @@
     margin: 40px;
 }
 
+.Tarjeta_Productos_Imagen{
+    margin-top: 30px;
+}
+
 .Tarjeta_Productos_Imagen img{
     width: 266px;
     height: 291px;
-    padding: 2%;
+    border: 2px solid;    
+    border-radius: 10px;
 }
 
 .Tarjetas_Productos_Informacion{
@@ -18,4 +23,29 @@
 
 .Tarjetas_Productos_Informacion h6{
     color: #A5C9CA;
+}
+
+.Tarjeta_Productos #botones{
+    
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.Tarjeta_Productos #botones button{
+    border-radius: 40px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Tarjeta_Productos{
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 }

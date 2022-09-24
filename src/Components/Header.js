@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import './Header.css'
 
 function Header(props) {
-  const [showAcceso, setAcceso] = useState(false)
+  const [showAcceso, setAcceso] = useState(true)
 
   return (
     <nav class="navbar navbar-expand-lg fixed-top">

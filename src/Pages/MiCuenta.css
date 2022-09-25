@@ -1,0 +1,22 @@
+.MiCuenta .card-body i{
+   font-size: 30px;
+}
+
+.MiCuenta{
+    width: 90%;
+    margin: auto;
+    color: #395b64;
+    
+ }
+
+ .MiCuenta #Conte{
+    display: flex;
+    flex-direction: row;
+ }
+
+.MiCuenta .card{
+    width: 300px;
+    margin: 20px;
+    background-color: #E7F6F2;
+    color: #395b64;
+ }

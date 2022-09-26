@@ -1,7 +1,7 @@
 import React, { useMemo, useState , useEffect} from "react";
 import './Carrito.css';
 
-import Tarjeta_Producto_Vertical from "../Components/Tarjeta_Producto_Vertical";
+import Tarjeta_Producto_Vertical from "../Components/Tarjeta_Producto_Vertical.js";
 
 function Carrito() {
     const [total, setTotal] = useState();

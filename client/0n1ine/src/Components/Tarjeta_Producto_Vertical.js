@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Carrito from '../Pages/Carrito';
+import Carrito from '../Pages/Carrito.js';
 import './Tarjeta_Producto_Vertical.css';
 
 

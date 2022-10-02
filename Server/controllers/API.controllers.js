@@ -48,3 +48,30 @@ export const getProductos = async (req, res) => {
     }
     res.json(result);
 }
+
+export const getCategorias = async (req, res) => {
+    
+    console.log(req.params);
+    
+    const [result] = await pool.query("SELECT * FROM Categorias");
+    
+    console.log(result);
+    
+    if(result.length == 0){
+        return res.status(404).json({message: "Categoria no encontrada"});
+    }
+    res.json(result);
+}
+export const getOfertas = async (req, res) => {
+    
+    console.log(req.params);
+    
+    const [result] = await pool.query("SELECT * FROM Productos WHERE Precio<600 ");
+    
+    console.log(result);
+    
+    if(result.length == 0){
+        return res.status(404).json({message: "Categoria no encontrada"});
+    }
+    res.json(result);
+}

@@ -29,6 +29,7 @@ function Productos() {
       
       </div>
   );
+  
 }
 
 export default Productos;
